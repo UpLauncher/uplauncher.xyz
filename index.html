@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <link rel="stylesheet" href="/assets/css/index.css" />
+
+    <script type="module" src="/assets/js/index.js" async defer></script>
+    <script type="module" src="/assets/js/bundle.js"></script>
+
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
+  </head>
+  <noscript
+    >JavaScriptを有効にしないとこのサイトのUIが壊れます。そして、タブ機能が動作しません。</noscript
+  >
+  <body class="dark">
+    <nav class="rcss-menu-top">
+      <ul>
+        <li class="nav-left">
+          <img
+            style="border-radius: 5px"
+            width="64px"
+            src="/assets/images/UpLauncher-ProfileImage.png"
+          />
+        </li>
+      </ul>
+      <div class="navigation-button">
+        <ul class="navigation-list">
+          <a href="#contact">
+            <li class="nav-right optional-button">
+              <md-outlined-button
+                ><span class="material-symbols-rounded" style="width: 5vw">
+                  contact_support </span
+                ><br />連絡</md-outlined-button
+              >
+            </li>
+          </a>
+
+          <a href="#product">
+            <li class="nav-right">
+              <md-outlined-button
+                ><span class="material-symbols-rounded" style="width: 5vw">
+                  inventory_2 </span
+                ><br />製品</md-outlined-button
+              >
+            </li>
+          </a>
+
+          <li class="nav-right">
+            <md-filled-button
+              ><span class="material-symbols-rounded" style="width: 5vw">
+                home </span
+              ><br />ホーム</md-filled-button
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="content center">
+      <h1 class="heading">Welcome</h1>
+      <p>
+        UpLauncherのウェブサイトへようこそ。このサイトでは、UpLauncherについてを紹介します。<br />このウェブサイトは、Material
+        Webを使用して作成されました。
+      </p>
+      <h1 class="heading">Introduction</h1>
+      <p>
+        UpLauncherは、雷さんのブランドです。使いやすいプログラムや拡張機能を作成しています。<br />
+        UpLauncherのプログラムや拡張機能を使うと人生が180°変わるかも！(しれない)<br />
+        このウェブサイトを作るのに大切な土曜日の1日を消費しました。（バカ）
+      </p>
+      <h1 class="heading" id="product">My Product</h1>
+      <br />
+
+      <md-tabs>
+        <md-primary-tab
+          aria-label="Content to view"
+          id="-tab"
+          aria-controls="-panel"
+        >
+          Visual Studio (Code)
+        </md-primary-tab>
+
+        <md-primary-tab
+          aria-label="Content to view"
+          id="-tab"
+          aria-controls="-panel"
+        >
+          プログラム
+        </md-primary-tab>
+      </md-tabs>
+
+      <div
+        id="-panel-vsc-extension"
+        class="tab-panel"
+        role="panel"
+        aria-labelledby="-tab"
+      >
+        <md-list style="margin: auto">
+          <md-list-item
+            interactive
+            href="https://marketplace.visualstudio.com/items?itemName=theuplauncher.vscoderpc"
+            target="_blank"
+          >
+            <div slot="headline">VS Code RPC</div>
+            <div slot="supporting-text">
+              DiscordにVS Codeのステータスを表示します。
+            </div>
+            <img
+              width="128px"
+              slot="start"
+              src="/assets/images/VSCodeRPC.png"
+            />
+            <md-icon slot="end">open_in_new</md-icon>
+          </md-list-item>
+          <md-list-item
+            interactive
+            href="https://marketplace.visualstudio.com/items?itemName=theuplauncher.purble"
+            target="_blank"
+          >
+            <div slot="headline">Purble</div>
+            <div slot="supporting-text">
+              VS Codeの見やすくてかっこいいテーマ。
+            </div>
+            <img width="128px" slot="start" src="/assets/images/purble.png" />
+            <md-icon slot="end">open_in_new</md-icon>
+          </md-list-item>
+        </md-list>
+      </div>
+
+      <div
+        id="-panel-program"
+        class="tab-panel"
+        role="panel"
+        aria-labelledby="-tab"
+      >
+        <md-list style="margin: auto">
+          <md-list-item
+            interactive
+            href="https://vistaupdater.net"
+            target="_blank"
+          >
+            <div slot="headline">VistaUpdater</div>
+            <div slot="supporting-text">
+              古いWindowsをアップデートできるように。
+            </div>
+            <img
+              width="128px"
+              slot="start"
+              src="/assets/images/vistaupdater.png"
+            />
+            <md-icon slot="end">open_in_new</md-icon>
+          </md-list-item>
+        </md-list>
+      </div>
+      <br />
+
+      <h1 class="heading" id="contact">Contact</h1>
+      <p>
+        お問い合わせは、メールアドレスとDiscordで受け付けています。<br />メールアドレスを表示するには、Captchaをクリアする必要があります。(スパム対策)
+      </p>
+      <a href="https://discord.gg/tJTTM56Wg2">
+        <md-filled-button
+          ><span class="material-symbols-rounded" style="width: 5vw">
+            groups </span
+          ><br />Discordで連絡</md-filled-button
+        >
+      </a>
+      <md-outlined-button style="margin-left: 5px" id="displayCaptcha"
+        ><span class="material-symbols-rounded" style="width: 5vw"> mail </span
+        ><br />メールで連絡</md-outlined-button
+      >
+      <p id="contactMail">
+        連絡用のメールアドレス: (スパム対策のため、Captchaを突破してください。)
+      </p>
+      <br />
+      <div id="turnstile"></div>
+    </div>
+
+    <footer>
+      <nav class="rcss-menu-top" style="text-align: center">
+        <h1>©2023 UpLauncher</h1>
+        <p>
+          このサイトは、ベータ版のuplauncher.xyzです。<br />バグは右下のフィードバックボタンから教えてください。
+        </p>
+      </nav>
+    </footer>
+
+    <md-fab variant="primary">
+      <md-icon slot="icon"> add_comment </md-icon>
+    </md-fab>
+
+    <md-dialog>
+      <div slot="headline">フィードバックを送信</div>
+      <form slot="content" id="form" action="http://127.0.0.1:3300">
+        ウェブサイトを改善するために、フィードバックを送信します。<br /><br />
+        <div class="contact-row">
+          <md-filled-text-field
+            autofocus
+            placeholder="example@example.com"
+            type="email"
+            name="email"
+            required
+            label="メールアドレス"
+          ></md-filled-text-field
+          ><br /><br />
+          <md-filled-text-field
+            required
+            label="お問い合わせ内容"
+            rows="5"
+            name="content"
+            cols="30"
+            type="textarea"
+            style="resize: none"
+          ></md-filled-text-field>
+        </div>
+      </form>
+      <div slot="actions">
+        <md-text-button form="form" value="cancel">キャンセル</md-text-button>
+        <md-filled-button form="form" type="submit" value="submit"
+          >フィードバックを送信</md-filled-button
+        >
+      </div>
+    </md-dialog>
+
+    <script>
+      //Turnstile
+      window.onloadTurnstileCallback = function () {
+        turnstile.render("#turnstile", {
+          sitekey: "0x4AAAAAAACYWAGYl5B5l4E9",
+          callback: function (token) {
+            document.querySelector("#contactMail").innerHTML = document
+              .querySelector("#contactMail")
+              .innerHTML.replace(
+                "(スパム対策のため、Captchaを突破してください。)",
+                "contact@uplauncher.xyz"
+              );
+          },
+        });
+      };
+      const displayCaptcha = document.querySelector("#displayCaptcha");
+      displayCaptcha.addEventListener("click", () => {
+        displayCaptcha.disabled = true;
+        turnstile.ready(onloadTurnstileCallback);
+      });
+    </script>
+  </body>
+</html>
