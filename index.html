@@ -1,82 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--meta-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Document</title>
-
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+    <meta
+      name="description"
+      content="UpLauncherのウェブサイトです。このサイトでは、UpLauncherについてを紹介しています。"
     />
-
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    <!--Configure Discord Embed-->
+    <meta content="ホーム | UpLauncher" property="og:title" />
+    <meta
+      content="UpLauncherのウェブサイトです。このサイトでは、UpLauncherについてを紹介しています。"
+      property="og:description"
     />
+    <meta content="https://new.uplauncher.xyz" property="og:url" />
+    <meta content="#4f378b" data-react-helmet="true" name="theme-color" />
 
+    <!--Title-->
+    <title>ホーム | UpLauncher</title>
+
+    <!--Preconnect to Google Fonts Server-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!--Load Stylesheet-->
     <link rel="stylesheet" href="/assets/css/index.css" />
 
+    <!--Load JavaScript File-->
     <script type="module" src="/assets/js/index.js" async defer></script>
     <script type="module" src="/assets/js/bundle.js"></script>
-
+    <!--Turnstile (Captcha)-->
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
   </head>
   <noscript
     >JavaScriptを有効にしないとこのサイトのUIが壊れます。そして、タブ機能が動作しません。</noscript
   >
   <body class="dark">
-    <nav class="rcss-menu-top">
-      <ul>
-        <li class="nav-left">
-          <img
-            style="border-radius: 5px"
-            width="64px"
-            src="/assets/images/UpLauncher-ProfileImage.png"
-          />
-        </li>
-      </ul>
-      <div class="navigation-button">
-        <ul class="navigation-list">
-          <a href="#contact">
-            <li class="nav-right optional-button">
-              <md-outlined-button
-                ><span class="material-symbols-rounded" style="width: 5vw">
-                  contact_support </span
-                ><br />連絡</md-outlined-button
-              >
-            </li>
-          </a>
+    <header></header>
 
-          <a href="#product">
-            <li class="nav-right">
-              <md-outlined-button
-                ><span class="material-symbols-rounded" style="width: 5vw">
-                  inventory_2 </span
-                ><br />製品</md-outlined-button
-              >
-            </li>
-          </a>
-
-          <li class="nav-right">
-            <md-filled-button
-              ><span class="material-symbols-rounded" style="width: 5vw">
-                home </span
-              ><br />ホーム</md-filled-button
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="progressbar"></div>
 
     <div class="content center">
       <h1 class="heading">Welcome</h1>
-      <p>
+      <p class="center-left">
         UpLauncherのウェブサイトへようこそ。このサイトでは、UpLauncherについてを紹介します。<br />このウェブサイトは、Material
         Webを使用して作成されました。
       </p>
       <h1 class="heading">Introduction</h1>
-      <p>
+      <p class="center-left">
         UpLauncherは、雷さんのブランドです。使いやすいプログラムや拡張機能を作成しています。<br />
         UpLauncherのプログラムや拡張機能を使うと人生が180°変わるかも！(しれない)<br />
         このウェブサイトを作るのに大切な土曜日の1日を消費しました。（バカ）
@@ -85,29 +57,12 @@
       <br />
 
       <md-tabs>
-        <md-primary-tab
-          aria-label="Content to view"
-          id="-tab"
-          aria-controls="-panel"
-        >
-          Visual Studio (Code)
-        </md-primary-tab>
+        <md-primary-tab id="-tab"> Visual Studio (Code) </md-primary-tab>
 
-        <md-primary-tab
-          aria-label="Content to view"
-          id="-tab"
-          aria-controls="-panel"
-        >
-          プログラム
-        </md-primary-tab>
+        <md-primary-tab id="-tab"> プログラム </md-primary-tab>
       </md-tabs>
 
-      <div
-        id="-panel-vsc-extension"
-        class="tab-panel"
-        role="panel"
-        aria-labelledby="-tab"
-      >
+      <div id="-panel-vsc-extension" class="tab-panel" aria-labelledby="-tab">
         <md-list style="margin: auto">
           <md-list-item
             interactive
@@ -119,9 +74,11 @@
               DiscordにVS Codeのステータスを表示します。
             </div>
             <img
-              width="128px"
+              width="128"
+              height="128"
               slot="start"
-              src="/assets/images/VSCodeRPC.png"
+              alt="VSCodeRPCのアイコン"
+              src="/assets/images/VSCodeRPC.webp"
             />
             <md-icon slot="end">open_in_new</md-icon>
           </md-list-item>
@@ -134,18 +91,19 @@
             <div slot="supporting-text">
               VS Codeの見やすくてかっこいいテーマ。
             </div>
-            <img width="128px" slot="start" src="/assets/images/purble.png" />
+            <img
+              width="128"
+              height="128"
+              slot="start"
+              alt="Purbleのアイコン"
+              src="/assets/images/purble.webp"
+            />
             <md-icon slot="end">open_in_new</md-icon>
           </md-list-item>
         </md-list>
       </div>
 
-      <div
-        id="-panel-program"
-        class="tab-panel"
-        role="panel"
-        aria-labelledby="-tab"
-      >
+      <div id="-panel-program" class="tab-panel" aria-labelledby="-tab">
         <md-list style="margin: auto">
           <md-list-item
             interactive
@@ -157,9 +115,11 @@
               古いWindowsをアップデートできるように。
             </div>
             <img
-              width="128px"
+              width="128"
+              height="128"
               slot="start"
-              src="/assets/images/vistaupdater.png"
+              alt="VistaUpdaterのアイコン"
+              src="/assets/images/vistaupdater.webp"
             />
             <md-icon slot="end">open_in_new</md-icon>
           </md-list-item>
@@ -171,13 +131,11 @@
       <p>
         お問い合わせは、メールアドレスとDiscordで受け付けています。<br />メールアドレスを表示するには、Captchaをクリアする必要があります。(スパム対策)
       </p>
-      <a href="https://discord.gg/tJTTM56Wg2">
-        <md-filled-button
-          ><span class="material-symbols-rounded" style="width: 5vw">
-            groups </span
-          ><br />Discordで連絡</md-filled-button
-        >
-      </a>
+      <md-filled-button href="https://discord.gg/tJTTM56Wg2"
+        ><span class="material-symbols-rounded" style="width: 5vw">
+          groups </span
+        ><br />Discordで連絡</md-filled-button
+      >
       <md-outlined-button style="margin-left: 5px" id="displayCaptcha"
         ><span class="material-symbols-rounded" style="width: 5vw"> mail </span
         ><br />メールで連絡</md-outlined-button
@@ -189,22 +147,20 @@
       <div id="turnstile"></div>
     </div>
 
-    <footer>
-      <nav class="rcss-menu-top" style="text-align: center">
-        <h1>©2023 UpLauncher</h1>
-        <p>
-          このサイトは、ベータ版のuplauncher.xyzです。<br />バグは右下のフィードバックボタンから教えてください。
-        </p>
-      </nav>
-    </footer>
+    <footer></footer>
 
-    <md-fab variant="primary">
+    <md-fab variant="primary" aria-label="フィードバックを送信">
       <md-icon slot="icon"> add_comment </md-icon>
     </md-fab>
 
     <md-dialog>
       <div slot="headline">フィードバックを送信</div>
-      <form slot="content" id="form" action="http://127.0.0.1:3300">
+      <form
+        slot="content"
+        id="form"
+        style="text-align: left;"
+        action="http://feedback.uplauncher.xyz/send"
+      >
         ウェブサイトを改善するために、フィードバックを送信します。<br /><br />
         <div class="contact-row">
           <md-filled-text-field
@@ -223,12 +179,14 @@
             name="content"
             cols="30"
             type="textarea"
-            style="resize: none"
+            style="resize: none;"
           ></md-filled-text-field>
         </div>
       </form>
       <div slot="actions">
-        <md-text-button form="form" value="cancel">キャンセル</md-text-button>
+        <md-text-button form="form" value="cancel" onclick="document.querySelector('md-dialog').close()"
+          >キャンセル</md-text-button
+        >
         <md-filled-button form="form" type="submit" value="submit"
           >フィードバックを送信</md-filled-button
         >
