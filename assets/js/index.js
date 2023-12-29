@@ -2,7 +2,7 @@
     ©2023 UpLauncher, Website Main JS.
     Developed by Rai❤
 
-    Don't use this javascript file for you project!!!!
+    Don't use this javascript file for your project!!!!
 */
 
 //Page loaded event
@@ -25,9 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
   /* Open File */ includer2.open("GET", "/assets/base/footer.html", true);
   includer2.onreadystatechange = function () {
     if (includer2.readyState === 4 && includer2.status === 200) {
-      const headerHTML = includer2.responseText;
-      const header = document.querySelector("footer");
-      /* Insert Footer */ header.insertAdjacentHTML("afterbegin", headerHTML);
+      const footerHTML = includer2.responseText;
+      const footer = document.querySelector("footer");
+      /* Insert Footer */ footer.insertAdjacentHTML("afterbegin", footerHTML);
     }
   };
   includer2.send();

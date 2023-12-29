@@ -7,6 +7,9 @@ package-lock.json
 ## importer.json
 assets/js/importer.js
 
+## .vscode
+.vscode
+
 ## GitHub .gitignore content
 # Logs
 logs

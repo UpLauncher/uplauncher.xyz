@@ -110,7 +110,7 @@ html {
 
 /* Font and Text Color */
 body {
-  font-family: "Noto Sans JP";
+  font-family: "Noto Sans JP" !important;
   color: var(--md-sys-color-primary);
   text-align: center;
 }
@@ -151,8 +151,38 @@ nav > p {
   text-align: left;
 }
 
+/* Infomation Max */
+@media screen and (min-width: 600px) {
+  .info-text {
+    width: 50%;
+  }
+}
+
+/* h1 Settings */
+h1 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* Contact Mail */
+#contactmail {
+  /* Size, Location */
+  margin: auto;
+  margin-top: 10px;
+  width: 30%;
+
+  /* Font */
+  font-family: "Noto Sans JP" !important;
+
+  /* Radius */
+  border-radius: 5px;
+
+  /* Text Setting */
+  text-align: left;
+}
+
 /* Menu Bar */
-ul {
+.rcss-menu-top ul {
   list-style-type: none;
 }
 

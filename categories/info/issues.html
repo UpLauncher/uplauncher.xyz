@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--meta-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="UpLauncherのウェブサイトです。このサイトでは、UpLauncherについてを紹介しています。">
+    <!--Configure Discord Embed-->
+    <meta content="ホーム | UpLauncher" property="og:title" />
+    <meta
+      content="UpLauncherのウェブサイトです。このサイトでは、UpLauncherについてを紹介しています。"
+      property="og:description"
+    />
+    <meta content="https://new.uplauncher.xyz" property="og:url" />
+    <meta content="#4f378b" data-react-helmet="true" name="theme-color" />
+
+    <!--Title-->
+    <title>ホーム | UpLauncher</title>
+
+    <!--Preconnect to Google Fonts Server-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!--Load Stylesheet-->
+    <link rel="stylesheet" href="/assets/css/index.css" />
+
+    <!--Load JavaScript File-->
+    <script type="module" src="/assets/js/index.js" async defer></script>
+    <script type="module" src="/assets/js/bundle.js"></script>
+    <!--Turnstile (Captcha)-->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
+  </head>
+  <noscript
+    >JavaScriptを有効にしないとこのサイトのUIが壊れます。そして、タブ機能が動作しません。</noscript
+  >
+  <body class="dark">
+    <header></header>
+
+    <div class="content center">
+      <h1 class="heading">Issues</h1>
+      <p class="center-left">
+        UpLauncherのウェブサイトには、複数の問題が存在します。<br>
+        このページでは、UpLauncherのウェブサイトの問題についてを記載しています。
+      </p>
+      <h1>モバイルでメニューが表示されない問題</h1>
+      <p class="center-left">
+        重要/緊急度: 重要        
+      </p><br>
+      <p class="center-left">
+        <b>2023/12/29(アップデート): この問題はまだ継続しています。修正までお待ちください。</b><br>
+        モバイルで、ヘッダー、フッターとフィードバック送信が利用できない問題を確認しています。<br>
+        原因としては、JavaScriptファイルがロードされていない、もしくはエラーが発生しているとみています。<br>
+        UpLauncherはこの問題の修正を試みています。ご迷惑をおかけし、申し訳ございません。
+      </p>
+      <h1>上部のスクロール進捗バーが動作しない問題</h1>
+      <p class="center-left">
+        重要/緊急度: 普通<br>
+        対象: Firefox, Safari等
+      </p><br>
+      <p class="center-left">
+        一部のブラウザで、画面上部のスクロール進捗バーが利用できない問題を確認しています。<br>
+        原因としては、一部のブラウザがanimation-timelineのscroll()をサポートしていないことが原因です。<br>
+        UpLauncherはこの問題の修正はできません。FirefoxやSafariがサポートするまでお待ちください。<br>
+        ChromeとEdgeではバージョン115以降、Operaはバージョン101以降が必要です。<a href="https://caniuse.com/?search=scroll()">Can I use</a>
+      </p>
+
+      <footer></footer>
+  </body>
+</html>
