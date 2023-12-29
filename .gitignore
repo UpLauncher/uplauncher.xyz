@@ -1,3 +1,13 @@
+# Rai Customized Content
+
+## package.json / package-lock.json
+package.json
+package-lock.json
+
+## importer.json
+assets/js/importer.js
+
+## GitHub .gitignore content
 # Logs
 logs
 *.log
