@@ -24,6 +24,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
+    <!--Ads by Google-->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3326621014935824"
+      crossorigin="anonymous"
+    ></script>
+
     <!--Load Stylesheet-->
     <link rel="stylesheet" href="/assets/css/index.css" />
 
@@ -141,22 +148,22 @@
         ><br />メールで連絡</md-outlined-button
       >
       <md-list id="contactmail">
-        <md-list-item
-        >
+        <md-list-item>
           <div slot="headline">総合的なお知らせ</div>
           <div slot="supporting-text">
             メールアドレス: contact@uplauncher.xyz
           </div>
         </md-list-item>
-        <md-list-item
-        >
+        <md-list-item>
           <div slot="headline">ソーシャル部門</div>
           <div slot="supporting-text">
             メールアドレス: social@uplauncher.xyz
           </div>
+        </md-list-item>
       </md-list>
       <br />
-      <div id="turnstile"></div><br>
+      <div id="turnstile"></div>
+      <br />
     </div>
 
     <footer></footer>
@@ -170,7 +177,7 @@
       <form
         slot="content"
         id="form"
-        style="text-align: left;"
+        style="text-align: left"
         action="https://feedback.uplauncher.xyz/send"
       >
         ウェブサイトを改善するために、フィードバックを送信します。<br /><br />
@@ -191,12 +198,15 @@
             name="content"
             cols="30"
             type="textarea"
-            style="resize: none;"
+            style="resize: none"
           ></md-filled-text-field>
         </div>
       </form>
       <div slot="actions">
-        <md-text-button form="form" value="cancel" onclick="document.querySelector('md-dialog').close()"
+        <md-text-button
+          form="form"
+          value="cancel"
+          onclick="document.querySelector('md-dialog').close()"
           >キャンセル</md-text-button
         >
         <md-filled-button form="form" type="submit" value="submit"
